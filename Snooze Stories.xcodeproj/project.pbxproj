@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0704A82BFE4DF400264DE6 /* Phi-3-mini-128k-instruct.IQ4_NL.gguf in Resources */ = {isa = PBXBuildFile; fileRef = CF0704A72BFE4DF400264DE6 /* Phi-3-mini-128k-instruct.IQ4_NL.gguf */; };
+		CF0F75662BC4800100C7C35B /* Snooze_StoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F75652BC4800100C7C35B /* Snooze_StoriesApp.swift */; };
+		CF0F75682BC4800100C7C35B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F75672BC4800100C7C35B /* ContentView.swift */; };
+		CF0F756A2BC4800200C7C35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0F75692BC4800200C7C35B /* Assets.xcassets */; };
+		CF0F756D2BC4800200C7C35B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0F756C2BC4800200C7C35B /* Preview Assets.xcassets */; };
+		CF5178C22BCA8C1C00417282 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CF5178C12BCA8C1C00417282 /* FirebaseAnalytics */; };
+		CF5178C42BCA8C1C00417282 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF5178C32BCA8C1C00417282 /* FirebaseAnalyticsSwift */; };
+		CF5178C72BCA8F5B00417282 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CF5178C62BCA8F5B00417282 /* FirebaseAuth */; };
+		CF5178D12BCAD85300417282 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178D02BCAD85300417282 /* LoginView.swift */; };
+		CF5178D42BCAE60600417282 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178D32BCAE60600417282 /* LogoutView.swift */; };
+		CF5178D62BCB0E0400417282 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178D52BCB0E0400417282 /* MainView.swift */; };
+		CF5178D82BCB13C300417282 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178D72BCB13C300417282 /* SettingsView.swift */; };
+		CF5178DC2BCBD9A100417282 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = CF5178DB2BCBD9A100417282 /* GoogleSignIn */; };
+		CF5178DE2BCBD9A100417282 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF5178DD2BCBD9A100417282 /* GoogleSignInSwift */; };
+		CF5178E02BCBDA8600417282 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF5178DF2BCBDA8600417282 /* GoogleService-Info.plist */; };
+		CF5178E32BCBE5E300417282 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178E22BCBE5E200417282 /* AuthenticationViewModel.swift */; };
+		CF5178EB2BCC062300417282 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5178EA2BCC062300417282 /* Authentication.swift */; };
+		CF5DA3C02BFBC30F00976413 /* DefineThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA3BF2BFBC30F00976413 /* DefineThemeView.swift */; };
+		CF5DA3C52BFBC91200976413 /* StorySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA3C42BFBC91200976413 /* StorySettingsView.swift */; };
+		CF5DA3C72BFBDAAC00976413 /* EmotionalMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA3C62BFBDAAC00976413 /* EmotionalMoodView.swift */; };
+		CF5DA3C92BFBDC2100976413 /* MainCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA3C82BFBDC2100976413 /* MainCharacterView.swift */; };
+		CF5DA3CB2BFBDE5300976413 /* TargetAudienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA3CA2BFBDE5300976413 /* TargetAudienceView.swift */; };
+		CF5DA4662BFCD26600976413 /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA4392BFCD26600976413 /* ChatItem.swift */; };
+		CF5DA4672BFCD26600976413 /* GenerateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43A2BFCD26600976413 /* GenerateButtonView.swift */; };
+		CF5DA4682BFCD26600976413 /* StoryGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43B2BFCD26600976413 /* StoryGenerationView.swift */; };
+		CF5DA4692BFCD26600976413 /* LLMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43C2BFCD26600976413 /* LLMTextView.swift */; };
+		CF5DA46A2BFCD26600976413 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43D2BFCD26600976413 /* Message.swift */; };
+		CF5DA46B2BFCD26600976413 /* MessageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43E2BFCD26600976413 /* MessageImage.swift */; };
+		CF5DA46C2BFCD26600976413 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA43F2BFCD26600976413 /* MessageView.swift */; };
+		CF5DA4742BFCD26600976413 /* ChatSettingsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA4492BFCD26600976413 /* ChatSettingsTemplate.swift */; };
+		CF5DA4752BFCD26600976413 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA44A2BFCD26600976413 /* Extensions.swift */; };
+		CF5DA4762BFCD26600976413 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA44B2BFCD26600976413 /* FileHelper.swift */; };
+		CF5DA4772BFCD26600976413 /* log_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA44C2BFCD26600976413 /* log_helper.swift */; };
+		CF5DA4782BFCD26600976413 /* Orientation_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA44D2BFCD26600976413 /* Orientation_helper.swift */; };
+		CF5DA4792BFCD26600976413 /* DidEndEditingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA44F2BFCD26600976413 /* DidEndEditingTextField.swift */; };
+		CF5DA47A2BFCD26600976413 /* GetDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA4502BFCD26600976413 /* GetDeviceInfo.swift */; };
+		CF5DA4832BFCD26600976413 /* phi3.json in Resources */ = {isa = PBXBuildFile; fileRef = CF5DA45A2BFCD26600976413 /* phi3.json */; };
+		CF5DA48A2BFCD26600976413 /* AIChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DA4632BFCD26600976413 /* AIChatModel.swift */; };
+		CF5DA4932BFCF9ED00976413 /* llmfarm_core in Frameworks */ = {isa = PBXBuildFile; productRef = CF5DA4922BFCF9ED00976413 /* llmfarm_core */; };
+		CF5DA4AC2BFE26C600976413 /* model_setting_templates in Resources */ = {isa = PBXBuildFile; fileRef = CF5DA4AB2BFE26C600976413 /* model_setting_templates */; };
+		CFBC9AB42BC71A1E0079F59E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9AB32BC71A1E0079F59E /* HomeView.swift */; };
+		CFBC9AB62BC71D240079F59E /* CustomColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9AB52BC71D240079F59E /* CustomColorScheme.swift */; };
+		CFBC9AB92BC72CC50079F59E /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9AB82BC72CC50079F59E /* CatalogueView.swift */; };
+		CFBC9ABB2BC731630079F59E /* CreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9ABA2BC731630079F59E /* CreationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF0704A72BFE4DF400264DE6 /* Phi-3-mini-128k-instruct.IQ4_NL.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Phi-3-mini-128k-instruct.IQ4_NL.gguf"; sourceTree = "<group>"; };
+		CF0F75622BC4800100C7C35B /* Snooze Stories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snooze Stories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0F75652BC4800100C7C35B /* Snooze_StoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snooze_StoriesApp.swift; sourceTree = "<group>"; };
+		CF0F75672BC4800100C7C35B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF0F75692BC4800200C7C35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF0F756C2BC4800200C7C35B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF5178C82BCA90C100417282 /* Snooze Stories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Snooze Stories.entitlements"; sourceTree = "<group>"; };
+		CF5178D02BCAD85300417282 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CF5178D32BCAE60600417282 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		CF5178D52BCB0E0400417282 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CF5178D72BCB13C300417282 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF5178DF2BCBDA8600417282 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5178E12BCBE46E00417282 /* Snooze-Stories-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Snooze-Stories-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CF5178E22BCBE5E200417282 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		CF5178EA2BCC062300417282 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		CF5DA3BF2BFBC30F00976413 /* DefineThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineThemeView.swift; sourceTree = "<group>"; };
+		CF5DA3C42BFBC91200976413 /* StorySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorySettingsView.swift; sourceTree = "<group>"; };
+		CF5DA3C62BFBDAAC00976413 /* EmotionalMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalMoodView.swift; sourceTree = "<group>"; };
+		CF5DA3C82BFBDC2100976413 /* MainCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCharacterView.swift; sourceTree = "<group>"; };
+		CF5DA3CA2BFBDE5300976413 /* TargetAudienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAudienceView.swift; sourceTree = "<group>"; };
+		CF5DA4392BFCD26600976413 /* ChatItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
+		CF5DA43A2BFCD26600976413 /* GenerateButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateButtonView.swift; sourceTree = "<group>"; };
+		CF5DA43B2BFCD26600976413 /* StoryGenerationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryGenerationView.swift; sourceTree = "<group>"; };
+		CF5DA43C2BFCD26600976413 /* LLMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMTextView.swift; sourceTree = "<group>"; };
+		CF5DA43D2BFCD26600976413 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CF5DA43E2BFCD26600976413 /* MessageImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageImage.swift; sourceTree = "<group>"; };
+		CF5DA43F2BFCD26600976413 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		CF5DA4492BFCD26600976413 /* ChatSettingsTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatSettingsTemplate.swift; sourceTree = "<group>"; };
+		CF5DA44A2BFCD26600976413 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CF5DA44B2BFCD26600976413 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		CF5DA44C2BFCD26600976413 /* log_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = log_helper.swift; sourceTree = "<group>"; };
+		CF5DA44D2BFCD26600976413 /* Orientation_helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation_helper.swift; sourceTree = "<group>"; };
+		CF5DA44F2BFCD26600976413 /* DidEndEditingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DidEndEditingTextField.swift; sourceTree = "<group>"; };
+		CF5DA4502BFCD26600976413 /* GetDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDeviceInfo.swift; sourceTree = "<group>"; };
+		CF5DA45A2BFCD26600976413 /* phi3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phi3.json; sourceTree = "<group>"; };
+		CF5DA4632BFCD26600976413 /* AIChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIChatModel.swift; sourceTree = "<group>"; };
+		CF5DA49B2BFCFB3F00976413 /* llmfarm_core.swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = llmfarm_core.swift; sourceTree = "<group>"; };
+		CF5DA4AB2BFE26C600976413 /* model_setting_templates */ = {isa = PBXFileReference; lastKnownFileType = folder; name = model_setting_templates; path = "Snooze Stories/LLM/model_setting_templates"; sourceTree = "<group>"; };
+		CFBC9AB32BC71A1E0079F59E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CFBC9AB52BC71D240079F59E /* CustomColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorScheme.swift; sourceTree = "<group>"; };
+		CFBC9AB82BC72CC50079F59E /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
+		CFBC9ABA2BC731630079F59E /* CreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF0F755F2BC4800100C7C35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5178DE2BCBD9A100417282 /* GoogleSignInSwift in Frameworks */,
+				CF5178C42BCA8C1C00417282 /* FirebaseAnalyticsSwift in Frameworks */,
+				CF5178DC2BCBD9A100417282 /* GoogleSignIn in Frameworks */,
+				CF5DA4932BFCF9ED00976413 /* llmfarm_core in Frameworks */,
+				CF5178C72BCA8F5B00417282 /* FirebaseAuth in Frameworks */,
+				CF5178C22BCA8C1C00417282 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF0F75592BC4800100C7C35B = {
+			isa = PBXGroup;
+			children = (
+				CF5DA4AB2BFE26C600976413 /* model_setting_templates */,
+				CF0F75642BC4800100C7C35B /* Snooze Stories */,
+				CF0F75632BC4800100C7C35B /* Products */,
+				CF5178C52BCA8F5B00417282 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF0F75632BC4800100C7C35B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0F75622BC4800100C7C35B /* Snooze Stories.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0F75642BC4800100C7C35B /* Snooze Stories */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA4972BFCFAE800976413 /* Packages */,
+				CF5178E12BCBE46E00417282 /* Snooze-Stories-Info.plist */,
+				CF5178C82BCA90C100417282 /* Snooze Stories.entitlements */,
+				CF0F75652BC4800100C7C35B /* Snooze_StoriesApp.swift */,
+				CF5DA4652BFCD26600976413 /* LLM */,
+				CF5178EF2BCE92F800417282 /* Main */,
+				CF5178D22BCAD85B00417282 /* Login */,
+				CF5DA3C12BFBC8AD00976413 /* Generation */,
+				CF5178EE2BCE92BC00417282 /* HomeView */,
+				CF5178D92BCB13C900417282 /* Settings */,
+				CFBC9AB72BC71D290079F59E /* Special Items */,
+				CF0F75692BC4800200C7C35B /* Assets.xcassets */,
+				CF0F756B2BC4800200C7C35B /* Preview Content */,
+			);
+			path = "Snooze Stories";
+			sourceTree = "<group>";
+		};
+		CF0F756B2BC4800200C7C35B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF0F756C2BC4800200C7C35B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF5178C52BCA8F5B00417282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF5178D22BCAD85B00417282 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF5178D02BCAD85300417282 /* LoginView.swift */,
+				CF5178EA2BCC062300417282 /* Authentication.swift */,
+				CF5178D32BCAE60600417282 /* LogoutView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF5178D92BCB13C900417282 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CF5178D72BCB13C300417282 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CF5178EE2BCE92BC00417282 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC9AB32BC71A1E0079F59E /* HomeView.swift */,
+				CFBC9AB82BC72CC50079F59E /* CatalogueView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		CF5178EF2BCE92F800417282 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CF5178D52BCB0E0400417282 /* MainView.swift */,
+				CF0F75672BC4800100C7C35B /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CF5DA3C12BFBC8AD00976413 /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC9ABA2BC731630079F59E /* CreationView.swift */,
+				CF5DA3C42BFBC91200976413 /* StorySettingsView.swift */,
+				CF5DA3BF2BFBC30F00976413 /* DefineThemeView.swift */,
+				CF5DA3C62BFBDAAC00976413 /* EmotionalMoodView.swift */,
+				CF5DA3C82BFBDC2100976413 /* MainCharacterView.swift */,
+				CF5DA3CA2BFBDE5300976413 /* TargetAudienceView.swift */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		CF5DA4402BFCD26600976413 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA4392BFCD26600976413 /* ChatItem.swift */,
+				CF5DA43A2BFCD26600976413 /* GenerateButtonView.swift */,
+				CF5DA43B2BFCD26600976413 /* StoryGenerationView.swift */,
+				CF5DA43C2BFCD26600976413 /* LLMTextView.swift */,
+				CF5DA43D2BFCD26600976413 /* Message.swift */,
+				CF5DA43E2BFCD26600976413 /* MessageImage.swift */,
+				CF5DA43F2BFCD26600976413 /* MessageView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		CF5DA44E2BFCD26600976413 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA4492BFCD26600976413 /* ChatSettingsTemplate.swift */,
+				CF5DA44A2BFCD26600976413 /* Extensions.swift */,
+				CF5DA44B2BFCD26600976413 /* FileHelper.swift */,
+				CF5DA44C2BFCD26600976413 /* log_helper.swift */,
+				CF5DA44D2BFCD26600976413 /* Orientation_helper.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CF5DA4512BFCD26600976413 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA44F2BFCD26600976413 /* DidEndEditingTextField.swift */,
+				CF5DA4502BFCD26600976413 /* GetDeviceInfo.swift */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		CF5DA4602BFCD26600976413 /* model_setting_templates */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA45A2BFCD26600976413 /* phi3.json */,
+			);
+			path = model_setting_templates;
+			sourceTree = "<group>";
+		};
+		CF5DA4622BFCD26600976413 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF0704A72BFE4DF400264DE6 /* Phi-3-mini-128k-instruct.IQ4_NL.gguf */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF5DA4652BFCD26600976413 /* LLM */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA4622BFCD26600976413 /* Models */,
+				CF5DA44E2BFCD26600976413 /* Lib */,
+				CF5DA4602BFCD26600976413 /* model_setting_templates */,
+				CF5DA4402BFCD26600976413 /* Chats */,
+				CF5DA4512BFCD26600976413 /* misc */,
+				CF5DA4632BFCD26600976413 /* AIChatModel.swift */,
+			);
+			path = LLM;
+			sourceTree = "<group>";
+		};
+		CF5DA4972BFCFAE800976413 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DA49B2BFCFB3F00976413 /* llmfarm_core.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		CFBC9AB72BC71D290079F59E /* Special Items */ = {
+			isa = PBXGroup;
+			children = (
+				CF5178DF2BCBDA8600417282 /* GoogleService-Info.plist */,
+				CFBC9AB52BC71D240079F59E /* CustomColorScheme.swift */,
+				CF5178E22BCBE5E200417282 /* AuthenticationViewModel.swift */,
+			);
+			path = "Special Items";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF0F75612BC4800100C7C35B /* Snooze Stories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0F75702BC4800200C7C35B /* Build configuration list for PBXNativeTarget "Snooze Stories" */;
+			buildPhases = (
+				CF0F755E2BC4800100C7C35B /* Sources */,
+				CF0F755F2BC4800100C7C35B /* Frameworks */,
+				CF0F75602BC4800100C7C35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snooze Stories";
+			packageProductDependencies = (
+				CF5178C12BCA8C1C00417282 /* FirebaseAnalytics */,
+				CF5178C32BCA8C1C00417282 /* FirebaseAnalyticsSwift */,
+				CF5178C62BCA8F5B00417282 /* FirebaseAuth */,
+				CF5178DB2BCBD9A100417282 /* GoogleSignIn */,
+				CF5178DD2BCBD9A100417282 /* GoogleSignInSwift */,
+				CF5DA4922BFCF9ED00976413 /* llmfarm_core */,
+			);
+			productName = "Snooze Stories";
+			productReference = CF0F75622BC4800100C7C35B /* Snooze Stories.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF0F755A2BC4800100C7C35B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CF0F75612BC4800100C7C35B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CF0F755D2BC4800100C7C35B /* Build configuration list for PBXProject "Snooze Stories" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF0F75592BC4800100C7C35B;
+			packageReferences = (
+				CF5178C02BCA8C1C00417282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CF5178DA2BCBD9A100417282 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				CF5DA4912BFCF9ED00976413 /* XCRemoteSwiftPackageReference "llmfarm_core" */,
+			);
+			productRefGroup = CF0F75632BC4800100C7C35B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF0F75612BC4800100C7C35B /* Snooze Stories */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF0F75602BC4800100C7C35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5DA4AC2BFE26C600976413 /* model_setting_templates in Resources */,
+				CF5DA4832BFCD26600976413 /* phi3.json in Resources */,
+				CF0704A82BFE4DF400264DE6 /* Phi-3-mini-128k-instruct.IQ4_NL.gguf in Resources */,
+				CF0F756D2BC4800200C7C35B /* Preview Assets.xcassets in Resources */,
+				CF0F756A2BC4800200C7C35B /* Assets.xcassets in Resources */,
+				CF5178E02BCBDA8600417282 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF0F755E2BC4800100C7C35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBC9AB42BC71A1E0079F59E /* HomeView.swift in Sources */,
+				CF5DA4782BFCD26600976413 /* Orientation_helper.swift in Sources */,
+				CF5178D82BCB13C300417282 /* SettingsView.swift in Sources */,
+				CF5178D62BCB0E0400417282 /* MainView.swift in Sources */,
+				CF5178D42BCAE60600417282 /* LogoutView.swift in Sources */,
+				CF5DA3CB2BFBDE5300976413 /* TargetAudienceView.swift in Sources */,
+				CF5178E32BCBE5E300417282 /* AuthenticationViewModel.swift in Sources */,
+				CF5DA48A2BFCD26600976413 /* AIChatModel.swift in Sources */,
+				CFBC9AB62BC71D240079F59E /* CustomColorScheme.swift in Sources */,
+				CF5178D12BCAD85300417282 /* LoginView.swift in Sources */,
+				CF5DA4742BFCD26600976413 /* ChatSettingsTemplate.swift in Sources */,
+				CF5DA4672BFCD26600976413 /* GenerateButtonView.swift in Sources */,
+				CF5DA4662BFCD26600976413 /* ChatItem.swift in Sources */,
+				CFBC9AB92BC72CC50079F59E /* CatalogueView.swift in Sources */,
+				CF5DA4772BFCD26600976413 /* log_helper.swift in Sources */,
+				CF5DA4792BFCD26600976413 /* DidEndEditingTextField.swift in Sources */,
+				CFBC9ABB2BC731630079F59E /* CreationView.swift in Sources */,
+				CF5DA46C2BFCD26600976413 /* MessageView.swift in Sources */,
+				CF5DA4682BFCD26600976413 /* StoryGenerationView.swift in Sources */,
+				CF5DA3C72BFBDAAC00976413 /* EmotionalMoodView.swift in Sources */,
+				CF5DA3C02BFBC30F00976413 /* DefineThemeView.swift in Sources */,
+				CF0F75682BC4800100C7C35B /* ContentView.swift in Sources */,
+				CF5DA47A2BFCD26600976413 /* GetDeviceInfo.swift in Sources */,
+				CF0F75662BC4800100C7C35B /* Snooze_StoriesApp.swift in Sources */,
+				CF5DA46B2BFCD26600976413 /* MessageImage.swift in Sources */,
+				CF5DA46A2BFCD26600976413 /* Message.swift in Sources */,
+				CF5DA4752BFCD26600976413 /* Extensions.swift in Sources */,
+				CF5178EB2BCC062300417282 /* Authentication.swift in Sources */,
+				CF5DA4762BFCD26600976413 /* FileHelper.swift in Sources */,
+				CF5DA3C52BFBC91200976413 /* StorySettingsView.swift in Sources */,
+				CF5DA3C92BFBDC2100976413 /* MainCharacterView.swift in Sources */,
+				CF5DA4692BFCD26600976413 /* LLMTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF0F756E2BC4800200C7C35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF0F756F2BC4800200C7C35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF0F75712BC4800200C7C35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Snooze Stories/Snooze Stories.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Snooze Stories/Preview Content\"";
+				DEVELOPMENT_TEAM = RAC3A6G5ZP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snooze-Stories-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Altantis-Elements.Snooze-Stories";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF0F75722BC4800200C7C35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Snooze Stories/Snooze Stories.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Snooze Stories/Preview Content\"";
+				DEVELOPMENT_TEAM = RAC3A6G5ZP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Snooze-Stories-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Altantis-Elements.Snooze-Stories";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF0F755D2BC4800100C7C35B /* Build configuration list for PBXProject "Snooze Stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0F756E2BC4800200C7C35B /* Debug */,
+				CF0F756F2BC4800200C7C35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0F75702BC4800200C7C35B /* Build configuration list for PBXNativeTarget "Snooze Stories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0F75712BC4800200C7C35B /* Debug */,
+				CF0F75722BC4800200C7C35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF5178C02BCA8C1C00417282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+		CF5178DA2BCBD9A100417282 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		CF5DA4912BFCF9ED00976413 /* XCRemoteSwiftPackageReference "llmfarm_core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guinmoon/llmfarm_core.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF5178C12BCA8C1C00417282 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5178C02BCA8C1C00417282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CF5178C32BCA8C1C00417282 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5178C02BCA8C1C00417282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CF5178C62BCA8F5B00417282 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5178C02BCA8C1C00417282 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CF5178DB2BCBD9A100417282 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5178DA2BCBD9A100417282 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		CF5178DD2BCBD9A100417282 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5178DA2BCBD9A100417282 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		CF5DA4922BFCF9ED00976413 /* llmfarm_core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF5DA4912BFCF9ED00976413 /* XCRemoteSwiftPackageReference "llmfarm_core" */;
+			productName = llmfarm_core;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CF0F755A2BC4800100C7C35B /* Project object */;
+}
